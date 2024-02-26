@@ -33,6 +33,8 @@ Add the following Nodemailer configuration to your server.js. For security reaso
 
 To use Postman for sending GET, POST, PUT, and DELETE requests, follow these general steps for each type of request. These operations are commonly used to test APIs.
 
+## CRUD Operations
+
 ### 1. **GET Request**
 
 To fetch data from the server:
@@ -73,4 +75,3 @@ To delete an existing item:
 3. You typically don't need to send a body with DELETE requests.
 4. Press `Send`.
 5. Check the response to confirm the deletion.
-
