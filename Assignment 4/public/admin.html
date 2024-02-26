@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add New Item</h2>
+        <!-- enctype attribute is set to handle file uploads -->
+        <form id="addItemForm" enctype="multipart/form-data">
+            <input type="text" id="nameEn" placeholder="Name (EN)" required>
+            <input type="text" id="nameOther" placeholder="Name (Other Language)" required>
+            <input type="text" id="descriptionEn" placeholder="Description (EN)" required>
+            <input type="text" id="descriptionOther" placeholder="Description (Other Language)" required>
+            <!-- File inputs are now correctly marked with the name attribute for multer -->
+            <input type="file" name="pictures" id="picture1" accept="image/*" required>
+            <input type="file" name="pictures" id="picture2" accept="image/*">
+            <input type="file" name="pictures" id="picture3" accept="image/*">
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+
+    <div class="item-list">
+        <h2>Existing Items</h2>
+        <ul id="itemList">
+            <!-- Items will be listed here -->
+        </ul>
+    </div>
+
+    <script src="adminScript.js"></script>
+</body>
+</html>

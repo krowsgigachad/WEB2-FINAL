@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container" style="width: auto; max-width: 600px;">
+        <h2>User Dashboard</h2>
+        <nav>
+            <a href="/weather" class="dashboard-link" style="background-color: #2196F3;">Weather</a>
+            <a href="/financial" class="dashboard-link" style="background-color: #FFC107;">Financial</a>
+            <a href="/environmental" class="dashboard-link" style="background-color: #4CAF50;">Environmental</a>
+        </nav>
+    </div>
+
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+        .form-container {
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: white;
+        }
+        .form-container h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .dashboard-link {
+            display: block;
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dashboard-link:hover {
+            opacity: 0.8;
+        }
+    </style>
+</body>
+</html>
